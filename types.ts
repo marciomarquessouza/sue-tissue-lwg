@@ -1,7 +1,7 @@
 import { Dialogues } from "@/libs/dialogues/types";
-import { Language } from "@/schemas/language";
-import { Lesson } from "@/schemas/lesson";
-import { Level } from "@/schemas/level";
+import { Language } from "@/server/schemas/language";
+import { Lesson } from "@/server/schemas/lesson";
+import { Level } from "@/server/schemas/level";
 
 export interface LessonOptions {
   day: number;

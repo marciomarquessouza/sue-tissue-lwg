@@ -1,8 +1,8 @@
 import { LessonOptions } from "@/server/types";
 import { contentImporters } from "../generated/contentImporters";
-import { AudioManifestSchema } from "@/schemas/audio";
-import { LessonDefinitionSchema } from "@/schemas/lesson";
-import { LocalesSchema } from "@/schemas/locales";
+import { AudioManifestSchema } from "@/server/schemas/audio";
+import { LessonDefinitionSchema } from "@/server/schemas/lesson";
+import { LocalesSchema } from "@/server/schemas/locales";
 
 export async function loadDayContent({
   lessonLanguage,

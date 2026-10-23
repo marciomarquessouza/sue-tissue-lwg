@@ -1,10 +1,10 @@
-import { AudioManifest } from "@/schemas/audio";
+import { AudioManifest } from "@/server/schemas/audio";
 import {
   Lesson,
   LessonDefinition,
   LessonEntryStep,
   LessonLocale,
-} from "@/schemas/lesson";
+} from "@/server/schemas/lesson";
 
 interface ComposeLessonOptions {
   lesson: LessonDefinition;
