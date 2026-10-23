@@ -1,0 +1,47 @@
+{
+  "id": "day_01",
+  "limits": {
+    "pronunciation": {
+      "minimumRecordTime": 1000,
+      "maximumRecordTime": 6000
+    },
+    "writing": {
+      "totalTips": 3,
+      "totalErrors": 3
+    },
+    "entry": {
+      "minimumSuccessPercentage": 0.6
+    }
+  },
+  "entries": {
+    "1": {
+      "id": "1",
+      "target": "Hallo",
+      "sequence": 1,
+      "audio": "audio/de-DE/A1-1/day_01/hallo.mp3"
+    },
+    "2": {
+      "id": "2",
+      "target": "Guten Tag",
+      "sequence": 2,
+      "audio": "audio/de-DE/A1-1/day_01/guten-tag.mp3"
+    },
+    "3": {
+      "id": "3",
+      "target": "Guten Morgen",
+      "sequence": 3,
+      "audio": "audio/de-DE/A1-1/day_01/guten-morgen.mp3"
+    },
+    "4": {
+      "id": "4",
+      "target": "Guten Abend",
+      "sequence": 4,
+      "audio": "audio/de-DE/A1-1/day_01/guten-abend.mp3"
+    },
+    "5": {
+      "id": "5",
+      "target": "Gute Nacht",
+      "sequence": 5
+    }
+  }
+}

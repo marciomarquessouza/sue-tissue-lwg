@@ -1,0 +1,78 @@
+{
+  "lesson": {
+    "title": "Common Phrases",
+    "entries": {
+      "1": {
+        "steps": {
+          "introduction": {
+            "text": "Thanks",
+            "instruction": "Danke",
+            "meanings": []
+          }
+        }
+      },
+      "3": {
+        "steps": {
+          "introduction": {
+            "text": "Teste",
+            "instruction": "Teste",
+            "meanings": []
+          }
+        }
+      }
+    }
+  },
+  "dialogues": {
+    "cell.welcome": {
+      "lines": []
+    },
+    "cell.marlene_first_interaction": {
+      "lines": []
+    },
+    "cell.daily_challenge": {
+      "lines": []
+    },
+    "cell.desk_interaction": {
+      "lines": []
+    },
+    "cell.desk_blocked": {
+      "lines": []
+    },
+    "cell.food_interaction": {
+      "lines": []
+    },
+    "cell.food_blocked": {
+      "lines": []
+    },
+    "cell.rat_interaction": {
+      "lines": []
+    },
+    "cell.rat_blocked": {
+      "lines": []
+    },
+    "cell.bed_interaction": {
+      "lines": []
+    },
+    "cell.bed_blocked": {
+      "lines": []
+    },
+    "dream.introduction": {
+      "lines": []
+    },
+    "dream.lesson_preparation": {
+      "lines": []
+    },
+    "dream.lesson_begin": {
+      "lines": []
+    },
+    "dream.lesson_finish": {
+      "lines": []
+    },
+    "dream.review_intro": {
+      "lines": []
+    },
+    "train.introduction": {
+      "lines": []
+    }
+  }
+}

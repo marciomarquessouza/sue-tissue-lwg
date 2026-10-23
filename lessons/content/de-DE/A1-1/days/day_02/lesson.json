@@ -1,0 +1,35 @@
+{
+  "id": "day_02",
+  "limits": {
+    "pronunciation": {
+      "minimumRecordTime": 1000,
+      "maximumRecordTime": 6000
+    },
+    "writing": {
+      "totalTips": 3,
+      "totalErrors": 3
+    },
+    "entry": {
+      "minimumSuccessPercentage": 0.6
+    }
+  },
+  "entries": {
+    "1": {
+      "id": "1",
+      "target": "Danke",
+      "sequence": 1,
+      "audio": "audio/de-DE/A1-1/day_02/danke.mp3"
+    },
+    "2": {
+      "id": "2",
+      "target": "Danke schön",
+      "sequence": 2,
+      "audio": "audio/de-DE/A1-1/day_02/danke-schon.mp3"
+    },
+    "3": {
+      "id": "3",
+      "target": "Teste",
+      "sequence": 3
+    }
+  }
+}

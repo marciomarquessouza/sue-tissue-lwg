@@ -1,0 +1,28 @@
+{
+  "id": "day_04",
+  "limits": {
+    "pronunciation": {
+      "minimumRecordTime": 1000,
+      "maximumRecordTime": 6000
+    },
+    "writing": {
+      "totalTips": 3,
+      "totalErrors": 3
+    },
+    "entry": {
+      "minimumSuccessPercentage": 0.6
+    }
+  },
+  "entries": {
+    "1": {
+      "id": "1",
+      "target": "Teste 1",
+      "sequence": 1
+    },
+    "2": {
+      "id": "2",
+      "target": "Teste 2",
+      "sequence": 2
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "day_03",
+  "limits": {
+    "pronunciation": {
+      "minimumRecordTime": 1000,
+      "maximumRecordTime": 6000
+    },
+    "writing": {
+      "totalTips": 3,
+      "totalErrors": 3
+    },
+    "entry": {
+      "minimumSuccessPercentage": 0.6
+    }
+  },
+  "entries": {}
+}

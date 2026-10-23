@@ -1,0 +1,133 @@
+{
+  "lesson": {
+    "title": "Greeting",
+    "entries": {
+      "1": {
+        "steps": {
+          "introduction": {
+            "text": "Teste",
+            "instruction": "Teste",
+            "meanings": [],
+            "gender": "Teste"
+          },
+          "listening": {
+            "text": "Listening Teste",
+            "instruction": "Instructions Teste",
+            "meanings": [
+              "Teste"
+            ],
+            "gender": "Why"
+          },
+          "pronunciation": {
+            "text": "Pronunciation Tip",
+            "instruction": "Instruction Tip",
+            "meanings": []
+          }
+        }
+      }
+    }
+  },
+  "dialogues": {
+    "cell.welcome": {
+      "lines": [
+        {
+          "text": "Hey Marlene",
+          "character": "jailer",
+          "moods": [
+            {
+              "character": "jailer",
+              "mood": "happy"
+            }
+          ],
+          "type": "dialogue"
+        },
+        {
+          "text": "Teste",
+          "character": "player",
+          "moods": [
+            {
+              "character": "player",
+              "mood": "neutral"
+            },
+            {
+              "character": "player",
+              "mood": "talking"
+            }
+          ],
+          "type": "dialogue"
+        },
+        {
+          "text": "Teste",
+          "character": "jailer",
+          "moods": [],
+          "type": "alternatives",
+          "alternatives": [
+            {
+              "id": "6f2264f3-7319-49f8-bb27-5a227a10006d",
+              "text": "Teste 1"
+            },
+            {
+              "id": "af847c49-381c-4735-885e-10d4a3db9b45",
+              "text": "Teste 2"
+            }
+          ]
+        },
+        {
+          "text": "Teste",
+          "character": "player",
+          "moods": [],
+          "type": "input",
+          "inputLabel": "Teste Label"
+        }
+      ]
+    },
+    "cell.marlene_first_interaction": {
+      "lines": []
+    },
+    "cell.daily_challenge": {
+      "lines": []
+    },
+    "cell.desk_interaction": {
+      "lines": []
+    },
+    "cell.desk_blocked": {
+      "lines": []
+    },
+    "cell.food_interaction": {
+      "lines": []
+    },
+    "cell.food_blocked": {
+      "lines": []
+    },
+    "cell.rat_interaction": {
+      "lines": []
+    },
+    "cell.rat_blocked": {
+      "lines": []
+    },
+    "cell.bed_interaction": {
+      "lines": []
+    },
+    "cell.bed_blocked": {
+      "lines": []
+    },
+    "dream.introduction": {
+      "lines": []
+    },
+    "dream.lesson_preparation": {
+      "lines": []
+    },
+    "dream.lesson_begin": {
+      "lines": []
+    },
+    "dream.lesson_finish": {
+      "lines": []
+    },
+    "dream.review_intro": {
+      "lines": []
+    },
+    "train.introduction": {
+      "lines": []
+    }
+  }
+}
