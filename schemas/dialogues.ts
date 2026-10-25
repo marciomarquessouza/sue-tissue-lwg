@@ -1,8 +1,66 @@
 import { z } from "zod";
+import { DEFAULT_DIALOGUES } from "../constants/dialogues";
+import { gameSceneSchema } from "./scene";
 
-import { ACTORS } from "@/constants/game";
-import { DialogueKey } from "@/constants/dialogues";
-import { CharacterMoodSchema } from "./game";
+export const DIALOGUE_NODE_TYPES = [
+  "locale",
+  "scene",
+  "dialogue",
+  "line-dialogue",
+  "line-alternatives",
+  "line-input",
+  "add-line",
+  "form",
+] as const;
+
+export const dialoguesContentNodeTypeSchema = z.enum(DIALOGUE_NODE_TYPES);
+
+export type DialoguesContentNodeType = z.infer<
+  typeof dialoguesContentNodeTypeSchema
+>;
+
+export const MOODS = [
+  "neutral",
+  "talking",
+  "sad",
+  "angry",
+  "happy",
+  "surprised",
+  "flushed",
+] as const;
+
+export const MoodSchema = z.enum(MOODS);
+
+export type Mood = z.infer<typeof MoodSchema>;
+
+export const ACTORS = [
+  "jailer",
+  "tutor",
+  "player",
+  "punisher",
+  "learningNode",
+  "guardian",
+] as const;
+
+export const CharacterSchema = z.enum(ACTORS);
+
+export type Character = z.infer<typeof CharacterSchema>;
+
+export const characterMoodSchema = z.object({
+  character: CharacterSchema,
+  mood: MoodSchema,
+});
+
+export type CharacterMood = z.infer<typeof characterMoodSchema>;
+
+export const dialogueKeySchema = z.enum(
+  Object.keys(DEFAULT_DIALOGUES) as [
+    keyof typeof DEFAULT_DIALOGUES,
+    ...(keyof typeof DEFAULT_DIALOGUES)[],
+  ],
+);
+
+export type DialogueKey = z.infer<typeof dialogueKeySchema>;
 
 /**
  * Interaction Type
@@ -16,14 +74,6 @@ export const InteractionTypeSchema = z.enum([
 ]);
 
 export type InteractionTypes = z.infer<typeof InteractionTypeSchema>;
-
-/**
- * Character
- */
-
-export const CharacterSchema = z.enum(ACTORS);
-
-export type Character = z.infer<typeof CharacterSchema>;
 
 /**
  * Alternative
@@ -43,8 +93,7 @@ export type Alternative = z.infer<typeof AlternativeSchema>;
 export const BaseLineSchema = z.object({
   text: z.string(),
   character: CharacterSchema,
-  moods: z.array(CharacterMoodSchema).optional(),
-  speed: z.number().positive().optional(),
+  moods: z.array(characterMoodSchema).optional(),
 });
 
 export type BaseLine = z.infer<typeof BaseLineSchema>;
@@ -98,8 +147,9 @@ export type InteractionLine = z.infer<typeof InteractionLineSchema>;
  */
 
 export const DialogueEntrySchema = z.object({
-  scene: z.string().optional(),
-  lines: z.array(InteractionLineSchema),
+  label: z.string(),
+  scene: gameSceneSchema,
+  lines: z.array(InteractionLineSchema).default([]),
 });
 
 export type DialogueEntry = z.infer<typeof DialogueEntrySchema>;
@@ -108,7 +158,8 @@ export type DialogueEntry = z.infer<typeof DialogueEntrySchema>;
  * Dialogues
  */
 
-export const DialoguesSchema = z.record(z.string(), DialogueEntrySchema);
+// export const DialoguesBaseSchema = z.record()
+export const dialoguesSchema = z.record(dialogueKeySchema, DialogueEntrySchema);
 
 export type Dialogues = Record<DialogueKey, DialogueEntry>;
 

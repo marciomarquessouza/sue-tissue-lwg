@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { languageSchema } from "./language";
 import { levelSchema } from "./level";
-import { dayDirectorySchema } from "./dayContent";
+import { dayDirectorySchema } from "./day";
 
 export const AudioManifestEntrySchema = z.object({
   path: z.string().min(1),

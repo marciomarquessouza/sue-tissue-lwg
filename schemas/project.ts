@@ -1,0 +1,32 @@
+import { z } from "zod";
+import { levelSchema } from "./level";
+import { languageSchema } from "./language";
+import { dayDirectorySchema } from "./day";
+
+export const projectOptionsSchema = z.object({
+  language: languageSchema,
+  level: levelSchema,
+});
+
+export type ProjectOptions = z.infer<typeof projectOptionsSchema>;
+
+export const projectDaySchema = z.object({
+  directory: dayDirectorySchema,
+  files: z.array(z.string()),
+  path: z.string(),
+});
+
+export type ProjectDay = z.infer<typeof projectDaySchema>;
+
+export const projectContentSchema = z.object({
+  language: languageSchema,
+  level: levelSchema,
+  lessonPlan: z.string().min(1, "Lesson Plan is required"),
+  lore: z.string().trim().min(1, "Lore is required"),
+  plannedDays: z.number().int().min(1, "Planned days is required").default(1),
+  createdDays: z.number().int().min(0).default(0),
+  days: z.array(projectDaySchema).default([]),
+  locales: z.array(languageSchema).min(1, "At last one locale is required"),
+});
+
+export type ProjectContent = z.infer<typeof projectContentSchema>;
