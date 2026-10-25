@@ -2,6 +2,7 @@ import { Dialogues } from "@/libs/dialogues/types";
 import { Language } from "@/server/schemas/language";
 import { Lesson } from "@/server/schemas/lesson";
 import { Level } from "@/server/schemas/level";
+import { DayDirectory } from "./schemas/day";
 
 export interface LessonOptions {
   day: number;
@@ -14,7 +15,7 @@ export type JsonImporter = () => Promise<{ default: unknown }>;
 
 export type DayContentImporters = {
   lesson: JsonImporter;
-  audio: JsonImporter;
+  dialogues: JsonImporter;
   locales: Partial<Record<Language, JsonImporter>>;
 };
 
@@ -23,7 +24,7 @@ export type DayContent = {
   dialogues: Dialogues;
 };
 
-export type LevelContentImporters = Record<number, DayContentImporters>;
+export type LevelContentImporters = Record<DayDirectory, DayContentImporters>;
 
 export type LanguageContentImporters = Partial<
   Record<Level, LevelContentImporters>
