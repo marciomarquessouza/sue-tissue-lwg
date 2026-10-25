@@ -1,0 +1,10 @@
+{
+  "name": "sue-tissue-lwg",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./schemas/*": "./schemas/*.ts",
+    "./lessons/*": "./lessons/*.ts",
+    "./types": "./types.ts"
+  }
+}
