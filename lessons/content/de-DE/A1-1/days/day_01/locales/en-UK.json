@@ -82,7 +82,14 @@
       ]
     },
     "cell.marlene_first_interaction": {
-      "lines": []
+      "lines": [
+        {
+          "text": "Teste",
+          "character": "jailer",
+          "moods": [],
+          "type": "dialogue"
+        }
+      ]
     },
     "cell.daily_challenge": {
       "lines": []
