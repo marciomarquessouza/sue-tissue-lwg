@@ -10,7 +10,7 @@ export const languageSchema = z.enum(SUPPORTED_LANGUAGES, "Invalid Language");
 
 export type Language = z.infer<typeof languageSchema>;
 
-type LanguageTarget = "lesson" | "player";
+export type LanguageTarget = "lesson" | "player";
 
 export function createLanguageSchema(target: LanguageTarget = "lesson") {
   const defaultLanguage =
