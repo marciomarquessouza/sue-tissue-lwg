@@ -93,7 +93,7 @@ export const LessonLocaleEntryStepSchema = z.object({
 export type LessonLocaleEntryStep = z.infer<typeof LessonLocaleEntryStepSchema>;
 
 export const LessonLocaleEntrySchema = z.object({
-  reference: z.string(),
+  reference: z.string().optional(),
   steps: z.record(LessonStepTypeSchema, LessonLocaleEntryStepSchema),
 });
 export type LessonLocaleEntry = z.infer<typeof LessonLocaleEntrySchema>;
