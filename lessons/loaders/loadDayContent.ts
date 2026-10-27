@@ -6,14 +6,14 @@ import { dayLessonLocalesScheme } from "@/server/schemas/locales";
 export async function loadDayContent({
   lessonLanguage,
   level,
-  day,
+  dayDirectory,
   playerLanguage,
 }: LessonOptions) {
-  const importers = contentImporters[lessonLanguage]?.[level]?.[day];
+  const importers = contentImporters[lessonLanguage]?.[level]?.[dayDirectory];
 
   if (!importers) {
     throw new Error(
-      `Lesson content not found: ${lessonLanguage}/${level}/${day}`,
+      `Lesson content not found: ${lessonLanguage}/${level}/${dayDirectory}`,
     );
   }
 

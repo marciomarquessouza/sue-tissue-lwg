@@ -5,7 +5,7 @@ import { Level } from "@/server/schemas/level";
 import { DayDirectory } from "./schemas/day";
 
 export interface LessonOptions {
-  day: number;
+  dayDirectory: DayDirectory;
   lessonLanguage: Language;
   playerLanguage: Language;
   level: Level;

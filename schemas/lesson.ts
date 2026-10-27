@@ -72,7 +72,6 @@ export type LessonDefinitionEntry = z.infer<typeof LessonDefinitionEntrySchema>;
 
 export const LessonDefinitionSchema = z.object({
   id: z.string().min(1),
-  day: z.number().int().positive(),
   limits: LessonChallengeLimitsSchema.optional(),
   entries: z.record(z.string(), LessonDefinitionEntrySchema),
 });

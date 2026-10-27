@@ -41,3 +41,11 @@ export const DaysContentSchema = z.object({
 });
 
 export type DaysContent = z.infer<typeof DaysContentSchema>;
+
+export function dayDirectoryToNumber(dayDirectory: DayDirectory): number {
+  return Number(dayDirectory.replace("day_", ""));
+}
+
+export function numberToDayDirectory(day: number): DayDirectory {
+  return dayDirectorySchema.parse(`day_${String(day).padStart(2, "0")}`);
+}

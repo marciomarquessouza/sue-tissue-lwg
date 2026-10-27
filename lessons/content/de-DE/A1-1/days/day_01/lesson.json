@@ -41,7 +41,8 @@
     "5": {
       "id": "5",
       "target": "Gute Nacht",
-      "sequence": 5
+      "sequence": 5,
+      "audio": "audio/de-DE/A1-1/day_01/gute-nacht.mp3"
     }
   }
 }
