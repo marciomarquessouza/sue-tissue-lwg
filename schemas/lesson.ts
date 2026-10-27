@@ -24,7 +24,7 @@ export const LESSON_STEPS = [
   "listening",
   "pronunciation",
   "writing",
-];
+] as const;
 
 export const LessonStepTypeSchema = z.enum(LESSON_STEPS);
 
@@ -94,7 +94,7 @@ export type LessonLocaleEntryStep = z.infer<typeof LessonLocaleEntryStepSchema>;
 
 export const LessonLocaleEntrySchema = z.object({
   reference: z.string().optional(),
-  steps: z.record(LessonStepTypeSchema, LessonLocaleEntryStepSchema),
+  steps: z.partialRecord(LessonStepTypeSchema, LessonLocaleEntryStepSchema),
 });
 export type LessonLocaleEntry = z.infer<typeof LessonLocaleEntrySchema>;
 
