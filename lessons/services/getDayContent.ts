@@ -10,7 +10,6 @@ export async function getDayContent(
   const lesson = composeLesson({
     lesson: content.lesson,
     locale: content.lessonLocale,
-    audio: content.audio,
   });
 
   return {

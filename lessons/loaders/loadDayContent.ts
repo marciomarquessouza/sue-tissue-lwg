@@ -1,14 +1,13 @@
 import { LessonOptions } from "@/server/types";
 import { contentImporters } from "../generated/contentImporters";
-import { AudioManifestSchema } from "@/server/schemas/audio";
 import { LessonDefinitionSchema } from "@/server/schemas/lesson";
-import { LocalesSchema } from "@/server/schemas/locales";
+import { dayLessonLocalesScheme } from "@/server/schemas/locales";
 
 export async function loadDayContent({
   lessonLanguage,
-  playerLanguage,
   level,
   day,
+  playerLanguage,
 }: LessonOptions) {
   const importers = contentImporters[lessonLanguage]?.[level]?.[day];
 
@@ -24,22 +23,18 @@ export async function loadDayContent({
     throw new Error(`Locale not found: ${playerLanguage}`);
   }
 
-  const [lessonModule, audioModule, localeModule] = await Promise.all([
+  const [lessonModule, localeModule] = await Promise.all([
     importers.lesson(),
-    importers.audio(),
     localeImporter(),
   ]);
 
   const lesson = LessonDefinitionSchema.parse(lessonModule.default);
 
-  const locales = LocalesSchema.parse(localeModule.default);
-
-  const audio = AudioManifestSchema.parse(audioModule.default);
+  const locales = dayLessonLocalesScheme.parse(localeModule.default);
 
   return {
     lesson,
     lessonLocale: locales.lesson,
     dialogues: locales.dialogues,
-    audio,
   };
 }

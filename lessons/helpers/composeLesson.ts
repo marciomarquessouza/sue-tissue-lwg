@@ -1,4 +1,3 @@
-import { AudioManifest } from "@/server/schemas/audio";
 import {
   Lesson,
   LessonDefinition,
@@ -9,30 +8,21 @@ import {
 interface ComposeLessonOptions {
   lesson: LessonDefinition;
   locale: LessonLocale;
-  audio: AudioManifest;
 }
 
 export function composeLesson({
   lesson,
   locale,
-  audio,
 }: ComposeLessonOptions): Lesson {
   return {
     id: lesson.id,
-    day: lesson.day,
-    title: locale.title,
     limits: lesson.limits,
 
     entries: Object.entries(lesson.entries).map(([id, entry]) => {
       const localizedEntry = locale.entries[id];
-      const audioEntry = audio[id];
 
       if (!localizedEntry) {
         throw new Error(`Missing locale for lesson entry: ${id}`);
-      }
-
-      if (!audioEntry) {
-        throw new Error(`Missing audio for lesson entry: ${id}`);
       }
 
       return {
@@ -45,8 +35,6 @@ export function composeLesson({
           type,
           ...step,
         })) as LessonEntryStep[],
-
-        audio: audioEntry.path,
       };
     }),
   };

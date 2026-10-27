@@ -2,6 +2,7 @@ import { z } from "zod";
 import { dialogueKeySchema, InteractionLineSchema } from "./dialogues";
 import { languageSchema } from "./language";
 import { levelSchema } from "./level";
+import { LessonLocaleSchema } from "./lesson";
 
 export const stepTypesSchema = z.enum([
   "introduction",
@@ -12,27 +13,8 @@ export const stepTypesSchema = z.enum([
 
 export type StepTypes = z.infer<typeof stepTypesSchema>;
 
-export const localeStepSchema = z.object({
-  text: z.string(),
-  instruction: z.string(),
-  meanings: z.array(z.string()).optional(),
-  gender: z.string().optional(),
-});
-
-export type LocaleStep = z.infer<typeof localeStepSchema>;
-
-export const localeEntryScheme = z.object({
-  reference: z.string().optional(),
-  steps: z.partialRecord(stepTypesSchema, localeStepSchema),
-});
-
-export type LocaleEntryScheme = z.infer<typeof localeEntryScheme>;
-
 export const dayLessonLocalesScheme = z.object({
-  lesson: z.object({
-    title: z.string(),
-    entries: z.record(z.string(), localeEntryScheme),
-  }),
+  lesson: LessonLocaleSchema,
   dialogues: z.record(
     dialogueKeySchema,
     z.object({ lines: z.array(InteractionLineSchema) }),
