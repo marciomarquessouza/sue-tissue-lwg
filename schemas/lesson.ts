@@ -132,6 +132,7 @@ export type LessonBase = z.infer<typeof lessonBaseSchema>;
 
 export const lessonSchema = z.object({
   id: z.string(),
+  title: z.string().optional(),
   limits: LessonChallengeLimitsSchema.optional(),
   entries: z.array(lessonEntrySchema),
 });

@@ -17,6 +17,7 @@ export function composeLesson({
   return {
     id: lesson.id,
     limits: lesson.limits,
+    title: locale.title,
 
     entries: Object.entries(lesson.entries).map(([id, entry]) => {
       const localizedEntry = locale.entries[id];
