@@ -5,6 +5,8 @@ import { languageSchema } from "./language";
 import { dayLessonLocalesScheme } from "./locales";
 import { levelSchema } from "./level";
 
+export const DEFAULT_PLANNED_DAYS = 30;
+
 export const dayDirectorySchema = z.string().regex(/^day_\d{2}$/);
 
 export type DayDirectory = z.infer<typeof dayDirectorySchema>;
