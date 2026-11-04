@@ -1,27 +1,9 @@
 import { z } from "zod";
-
-import { ACTORS, MOODS } from "@/constants/game";
-
-export const CharacterSchema = z.enum([
-  ACTORS.JAILER,
-  ACTORS.TUTOR,
-  ACTORS.PLAYER,
-  ACTORS.PUNISHER,
-  ACTORS.LEARNING_NODE,
-  ACTORS.GUARDIAN,
-]);
+import { GAME_SCENES, GAME_WORLDS } from "@/constants/game";
+import { CharacterSchema } from "./actors";
+import { MoodSchema } from "./dialogues";
 
 export type Character = z.infer<typeof CharacterSchema>;
-
-export const MoodSchema = z.enum([
-  MOODS.NEUTRAL,
-  MOODS.TALKING,
-  MOODS.SAD,
-  MOODS.ANGRY,
-  MOODS.HAPPY,
-  MOODS.SURPRISED,
-  MOODS.FLUSHED,
-]);
 
 export type Mood = z.infer<typeof MoodSchema>;
 
@@ -31,8 +13,6 @@ export const CharacterMoodSchema = z.object({
 });
 
 export type CharacterMood = z.infer<typeof CharacterMoodSchema>;
-
-import { GAME_SCENES, GAME_WORLDS } from "@/constants/game";
 
 export const GameSceneSchema = z.enum([
   GAME_SCENES.CELL_SCENE,

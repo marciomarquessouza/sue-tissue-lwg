@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { DEFAULT_DIALOGUES } from "../constants/dialogues";
 import { gameSceneSchema } from "./scene";
+import { CharacterSchema } from "./actors";
 
 export const DIALOGUE_NODE_TYPES = [
   "locale",
@@ -32,19 +33,6 @@ export const MOODS = [
 export const MoodSchema = z.enum(MOODS);
 
 export type Mood = z.infer<typeof MoodSchema>;
-
-export const ACTORS = [
-  "jailer",
-  "tutor",
-  "player",
-  "punisher",
-  "learningNode",
-  "guardian",
-] as const;
-
-export const CharacterSchema = z.enum(ACTORS);
-
-export type Character = z.infer<typeof CharacterSchema>;
 
 export const characterMoodSchema = z.object({
   character: CharacterSchema,
