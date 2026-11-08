@@ -10,6 +10,13 @@ export const projectOptionsSchema = z.object({
 
 export type ProjectOptions = z.infer<typeof projectOptionsSchema>;
 
+export const projectFiltersSchema = z.object({
+  language: languageSchema.optional(),
+  level: levelSchema.optional(),
+});
+
+export type ProjectFilters = z.infer<typeof projectFiltersSchema>;
+
 export const projectDaySchema = z.object({
   directory: dayDirectorySchema,
   files: z.array(z.string()),
