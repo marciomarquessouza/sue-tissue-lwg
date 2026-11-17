@@ -18,7 +18,24 @@
       "id": "1",
       "target": "Hello",
       "sequence": 1,
-      "audio": "audio/en-UK/A1-1/day_01/hello.mp3"
+      "audio": "audio/en-UK/A1-1/day_01/hello.mp3",
+      "type": "grammar",
+      "enabledSteps": [
+        "introduction",
+        "listening",
+        "pronunciation",
+        "writing"
+      ]
+    },
+    "2": {
+      "id": "2",
+      "target": "Vocabulary Example",
+      "sequence": 2,
+      "type": "vocabulary",
+      "enabledSteps": [
+        "introduction",
+        "listening"
+      ]
     }
   }
 }

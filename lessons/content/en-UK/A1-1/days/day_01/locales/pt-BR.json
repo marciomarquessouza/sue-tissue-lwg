@@ -3,6 +3,16 @@
     "title": "Verbo To Be",
     "entries": {
       "1": {
+        "concept": "",
+        "description": "",
+        "examples": [
+          {
+            "id": "1",
+            "text": "Hello",
+            "translation": "Olá",
+            "audio": "audio/en-UK/A1-1/day_01/hello.mp3"
+          }
+        ],
         "steps": {
           "introduction": {
             "text": "Teste",
@@ -13,6 +23,23 @@
             "gender": "Teste"
           }
         }
+      },
+      "2": {
+        "concept": "Teste",
+        "description": "Teste",
+        "steps": {},
+        "examples": [
+          {
+            "id": "1",
+            "text": "Vocabulary Example",
+            "translation": "teste"
+          },
+          {
+            "id": "2",
+            "text": "Teste 2",
+            "translation": ""
+          }
+        ]
       }
     }
   },
