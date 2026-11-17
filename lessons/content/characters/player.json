@@ -55,6 +55,46 @@
       "title": "Encontro com Eliza",
       "description": "Durante uma viagem de trem para trabalhar no exterior, conhece Eliza. Ela se apaixona por Josef e rouba seus cadernos sobre Shezmu.",
       "type": "relationship"
+    },
+    {
+      "id": "ae394d7f-4740-49d5-a6df-8f3672baa72f",
+      "date": "1960",
+      "age": "26",
+      "title": "Chegada à cidade-estado",
+      "description": "Começa a trabalhar na construção civil e a enviar dinheiro à família, permitindo que Maria estude piano.",
+      "type": "milestone"
+    },
+    {
+      "id": "2810f75d-c780-42ff-8bd0-0a7e82293df0",
+      "date": "1960–1976",
+      "age": "26–42",
+      "title": "Isolamento e reconstrução de Shezmu",
+      "description": "Reconstrói e aperfeiçoa a linguagem após perder os cadernos. Continua trabalhando e enviando dinheiro à família, enquanto se afasta progressivamente das relações sociais.",
+      "type": "milestone"
+    },
+    {
+      "id": "16f64b9c-3e01-4ff8-8702-f3b1e39dd0a3",
+      "date": "1968",
+      "age": "34",
+      "title": "Lei da Língua Nativa",
+      "description": "A legislação passa a proibir a permanência de imigrantes que não dominam o idioma local, colocando Josef sob risco de prisão.",
+      "type": "milestone"
+    },
+    {
+      "id": "00d4e583-db25-4e06-995d-1949695c6aec",
+      "date": "1976",
+      "age": "42",
+      "title": "Prisão de Josef",
+      "description": "É submetido a um teste linguístico em sua residência e detido por não conseguir responder adequadamente. Seus cadernos acabam nas mãos de Marlene.",
+      "type": "milestone"
+    },
+    {
+      "id": "121eed7f-5e71-46f3-998a-79288a0763ab",
+      "date": "1976",
+      "age": "42",
+      "title": "Reencontro com Eliza nos sonhos",
+      "description": "Durante o encarceramento, passa a encontrar Eliza no mundo espiritual e a receber ensinamentos sobre o idioma local.",
+      "type": "milestone"
     }
   ],
   "relationships": [
