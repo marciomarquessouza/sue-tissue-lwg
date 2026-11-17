@@ -30,7 +30,12 @@ export function composeLesson({
         id,
         sequence: entry.sequence,
         target: entry.target,
+        type: entry.type,
+        enabledSteps: entry.enabledSteps,
         reference: localizedEntry.reference,
+        concept: localizedEntry.concept,
+        description: localizedEntry.description,
+        examples: localizedEntry.examples,
 
         steps: Object.entries(localizedEntry.steps).map(([type, step]) => ({
           type,
