@@ -1,0 +1,24 @@
+{
+  "id": "day_01",
+  "limits": {
+    "pronunciation": {
+      "minimumRecordTime": 1000,
+      "maximumRecordTime": 6000
+    },
+    "writing": {
+      "totalTips": 3,
+      "totalErrors": 3
+    },
+    "entry": {
+      "minimumSuccessPercentage": 0.6
+    }
+  },
+  "entries": {
+    "1": {
+      "id": "1",
+      "target": "Hello",
+      "sequence": 1,
+      "audio": "audio/en-UK/A1-1/day_01/hello.mp3"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "cell.welcome": {
+    "label": "Welcome",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.marlene_first_interaction": {
+    "label": "Marlene First Interaction",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.daily_challenge": {
+    "label": "Daily Challenge",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.desk_interaction": {
+    "label": "Desk Interaction",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.desk_blocked": {
+    "label": "Desk Blocked",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.food_interaction": {
+    "label": "Food Interaction",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.food_blocked": {
+    "label": "Food Blocked",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.rat_interaction": {
+    "label": "Rat Interaction",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.rat_blocked": {
+    "label": "Rat Blocked",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.bed_interaction": {
+    "label": "Bed Interaction",
+    "scene": "CELL",
+    "lines": []
+  },
+  "cell.bed_blocked": {
+    "label": "Bed Blocked",
+    "scene": "CELL",
+    "lines": []
+  },
+  "dream.introduction": {
+    "label": "Introduction",
+    "scene": "DREAM",
+    "lines": []
+  },
+  "dream.lesson_preparation": {
+    "label": "Lesson Preparation",
+    "scene": "DREAM",
+    "lines": []
+  },
+  "dream.lesson_begin": {
+    "label": "Lesson Begin",
+    "scene": "DREAM",
+    "lines": []
+  },
+  "dream.lesson_finish": {
+    "label": "Lesson Finish",
+    "scene": "DREAM",
+    "lines": []
+  },
+  "dream.review_intro": {
+    "label": "Review Intro",
+    "scene": "DREAM",
+    "lines": []
+  },
+  "train.introduction": {
+    "label": "Introduction",
+    "scene": "TRAIN",
+    "lines": []
+  }
+}
