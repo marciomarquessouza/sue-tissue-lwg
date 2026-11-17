@@ -30,6 +30,21 @@ export const LessonStepTypeSchema = z.enum(LESSON_STEPS);
 
 export type LessonStepType = z.infer<typeof LessonStepTypeSchema>;
 
+export const LessonEntryTypeSchema = z.enum(["vocabulary", "grammar"]);
+export type LessonEntryType = z.infer<typeof LessonEntryTypeSchema>;
+
+export const LessonEnabledStepsSchema = z.array(LessonStepTypeSchema);
+export type LessonEnabledSteps = z.infer<typeof LessonEnabledStepsSchema>;
+
+/** Examples are localized; legacy entry-level target/audio remain supported. */
+export const LessonLocaleExampleSchema = z.object({
+  id: z.string().min(1),
+  text: z.string().min(1),
+  translation: z.string(),
+  audio: z.string().optional(),
+});
+export type LessonLocaleExample = z.infer<typeof LessonLocaleExampleSchema>;
+
 /**
  * Limits
  */
@@ -67,6 +82,8 @@ export type LessonChallengeLimits = z.infer<typeof LessonChallengeLimitsSchema>;
 export const LessonDefinitionEntrySchema = z.object({
   sequence: z.number().int().nonnegative(),
   target: z.string().min(1),
+  type: LessonEntryTypeSchema.optional(),
+  enabledSteps: LessonEnabledStepsSchema.optional(),
 });
 export type LessonDefinitionEntry = z.infer<typeof LessonDefinitionEntrySchema>;
 
@@ -93,6 +110,9 @@ export type LessonLocaleEntryStep = z.infer<typeof LessonLocaleEntryStepSchema>;
 
 export const LessonLocaleEntrySchema = z.object({
   reference: z.string().optional(),
+  concept: z.string().optional(),
+  description: z.string().optional(),
+  examples: z.array(LessonLocaleExampleSchema).min(1).optional(),
   steps: z.partialRecord(LessonStepTypeSchema, LessonLocaleEntryStepSchema),
 });
 export type LessonLocaleEntry = z.infer<typeof LessonLocaleEntrySchema>;
@@ -118,6 +138,11 @@ export const lessonEntrySchema = z.object({
   target: z.string(),
   sequence: z.number().int().nonnegative(),
   audio: z.string().optional(),
+  type: LessonEntryTypeSchema.optional(),
+  enabledSteps: LessonEnabledStepsSchema.optional(),
+  concept: z.string().optional(),
+  description: z.string().optional(),
+  examples: z.array(LessonLocaleExampleSchema).min(1).optional(),
   steps: z.array(LessonEntryStepSchema).optional(),
 });
 export type LessonEntry = z.infer<typeof lessonEntrySchema>;
