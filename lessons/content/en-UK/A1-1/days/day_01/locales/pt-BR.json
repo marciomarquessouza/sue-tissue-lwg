@@ -11,6 +11,12 @@
             "text": "Hello",
             "translation": "Olá",
             "audio": "audio/en-UK/A1-1/day_01/hello.mp3"
+          },
+          {
+            "id": "2",
+            "text": "Hi",
+            "translation": "Ola",
+            "audio": "audio/en-UK/A1-1/day_01/examples/pt-BR/entry_1_example_2.mp3"
           }
         ],
         "steps": {
@@ -27,7 +33,6 @@
       "2": {
         "concept": "Teste",
         "description": "Teste",
-        "steps": {},
         "examples": [
           {
             "id": "1",
@@ -39,7 +44,8 @@
             "text": "Teste 2",
             "translation": ""
           }
-        ]
+        ],
+        "steps": {}
       }
     }
   },
