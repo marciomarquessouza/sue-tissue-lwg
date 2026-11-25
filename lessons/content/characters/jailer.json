@@ -98,13 +98,13 @@
   "relationships": [
     {
       "id": "f5cb5f1d-e252-44f9-83a0-be3fed5b35b2",
-      "name": "Miyako Weiss",
+      "name": "Miyako Schleicher",
       "type": "mother",
       "description": "Former Miyako Inoue"
     },
     {
       "id": "a06f41bd-d06e-487d-a5b3-63bb92f078e5",
-      "name": "August Weiss",
+      "name": "August Schleicher",
       "type": "father",
       "description": ""
     },
@@ -114,13 +114,13 @@
       "type": "guardian",
       "description": "",
       "position": {
-        "x": 569.1504550739355,
+        "x": 553.2509348436388,
         "y": 120.29606409605475
       }
     },
     {
       "id": "f8b9e464-4e24-45e0-92b5-bef7a1823c87",
-      "name": "???",
+      "name": "Sophie Weiss",
       "type": "daughter",
       "description": "",
       "position": {
@@ -130,13 +130,19 @@
     },
     {
       "id": "4c21747c-e10d-4306-95ee-f565c82f9de3",
-      "name": "???",
+      "name": "Hanna Weiss",
       "type": "daughter",
       "description": "",
       "position": {
         "x": 441.8027898884857,
         "y": 358.63107235684583
       }
+    },
+    {
+      "id": "638ff16c-1391-41e5-9ed2-4e298c149f83",
+      "name": "Alexander Weiss",
+      "type": "partner",
+      "description": ""
     }
   ]
 }
