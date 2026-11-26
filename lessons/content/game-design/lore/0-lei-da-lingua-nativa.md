@@ -3,10 +3,9 @@ title: "0 - Lei da Língua Nativa"
 description: ""
 ---
 
-# Lei da Língua Nativa
-
-**Gesetz zum Schutz der Landessprache (LSG)**
-**Ano de promulgação: 1968**
+Lei da Língua Nativa
+***Ano de promulgação: 1968***
+==============================
 
 ## Preâmbulo
 
@@ -24,7 +23,9 @@ A presente lei estabelece a obrigatoriedade do conhecimento da língua nacional,
 
 **§ 2 — Âmbito de aplicação**
 
-As disposições desta lei aplicam-se a todos os indivíduos residentes no território nacional, independentemente de sua nacionalidade ou origem.
+(1) As disposições desta lei aplicam-se a todos os indivíduos com idade igual ou superior a 14 anos residentes no território nacional, independentemente de sua nacionalidade ou origem.
+
+(2) Aos indivíduos menores de 14 anos, a aquisição da língua nacional será de responsabilidade de seus pais ou responsáveis legais.
 
 **§ 3 — Obrigação linguística**
 
@@ -32,9 +33,17 @@ Todo indivíduo deverá possuir conhecimento da língua nacional considerado suf
 
 A determinação da suficiência desse conhecimento compete exclusivamente às autoridades responsáveis pela avaliação linguística.
 
-**§ 4 — Prazo de adaptação**
+### **§ 4 — Prazo de adaptação linguística**
 
-Aos estrangeiros que ingressarem no território nacional será concedido um prazo máximo de três meses para a aquisição do conhecimento linguístico exigido pelo Estado.
+(1) Aos estrangeiros que ingressarem no território nacional será concedido um prazo máximo de três meses para a aquisição dos conhecimentos linguísticos exigidos pela presente lei.
+
+(2) A contagem do prazo terá início no momento da entrada do indivíduo no território nacional, independentemente de sua condição migratória ou da finalidade de sua permanência.
+
+(3) A saída temporária do território nacional não interrompe, suspende ou reinicia a contagem do prazo estabelecido.
+
+(4) A prorrogação do prazo constitui prerrogativa exclusiva do Presidente da República em exercício, mediante autorização expressa, individual e por escrito.
+
+(5) Nenhuma outra autoridade administrativa, judicial ou policial poderá conceder prorrogação ou dispensa da obrigação linguística.
 
 ## Capítulo II — Fiscalização linguística
 
