@@ -100,15 +100,15 @@
   "relationships": [
     {
       "id": "d39095c1-4095-4411-b2d3-7be73b9b9b30",
-      "name": "O Açougueiro",
+      "name": "Douglas Grimm",
       "type": "father",
-      "description": "O nome dele nunca vai ser revelado. Sua profissão vai ser seu nome."
+      "description": ""
     },
     {
       "id": "1bc15faf-c551-463e-9b82-69649b7bee8b",
-      "name": "A Devota",
+      "name": "Rita Grimm",
       "type": "mother",
-      "description": "O nome dela nunca será revelada."
+      "description": ""
     },
     {
       "id": "19e5e05f-856f-4116-801f-2ce4d8414860",
