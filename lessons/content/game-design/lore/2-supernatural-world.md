@@ -1,5 +1,5 @@
 ---
-title: "2 - Supernatural World"
+title: "2 - The mythological world"
 description: ""
 ---
 
